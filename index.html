@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub navegação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background-color: rgb(100, 198, 237);
+    }
+
+    h1 {
+        display: block;
+        background-color: azure;
+        text-align: center;
+        border-style: solid;
+        border-width: 3pt;
+        border-color: rgb(0, 17, 255);
+        color: rgb(104, 42, 165);
+    }
+
+    h3 {
+
+        display: block;
+
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    hr {
+
+        border-style: solid;
+
+        border-width: 5px;
+
+        border-color: rgb(63, 95, 95);
+
+    }
+
+    .navbar {
+
+        overflow: hidden;
+
+        background-color: #e43f9ae1;
+
+    }
+
+    .navbar a {
+
+        float: left;
+
+        font-size: 16px;
+
+        color: white;
+
+        text-align: center;
+
+        padding: 14px 16px;
+
+        text-decoration: none;
+
+    }
+
+    .subnav {
+
+        float: left;
+
+        overflow: hidden;
+
+    }
+
+    .subnav .subnavbtn {
+
+        font-size: 16px;
+
+        border: none;
+
+        outline: none;
+
+        color: white;
+
+        padding: 14px 16px;
+
+        background-color: inherit;
+
+        font-family: inherit;
+
+        margin: 0;
+
+    }
+
+    .navbar a:hover,
+    .subnav:hover .subnavbtn {
+
+        background-color: rgb(255, 132, 0);
+
+    }
+
+    .subnav-content {
+
+        display: none;
+
+        position: absolute;
+
+        left: 0;
+
+        background-color: rgb(119, 0, 255);
+
+        width: 100%;
+
+        z-index: 1;
+
+    }
+
+    .subnav-content a {
+
+        float: left;
+
+        color: white;
+
+        text-decoration: none;
+
+    }
+
+    .subnav-content a:hover {
+
+        background-color: #eee;
+
+        color: black;
+
+    }
+
+    .subnav:hover .subnav-content {
+
+        display: block;
+
+    }
+
+    button {
+
+        display: inline-block;
+
+        background-color: rgb(255, 176, 127);
+
+        border-style: solid;
+
+        border-color: blue;
+
+        border-radius: 5px;
+    }
+
+    iframe {
+        display: block;
+        position: relative;
+        margin: auto;
+        max-width: 100%
+    }
+
+    .caixa{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fundo{
+        display: flex;
+        gap: 120px;
+    }
+
+    footer {
+        background-color: #e43f9ae1;
+        padding: 30px;
+        text-align: center;
+        color: white;
+        
+        margin-top: 30px;
+    }
+
+    footer a{
+        text-decoration: none;
+        color: white;
+    }
+</style>
+
+
+
+
+<body>
+
+    <body>
+
+        <h1><img src="IMAGENS/castelo news.png" alt=""></h1>
+
+        <hr>
+        <p
+            style="display: block; border-style: solid; border-width: 2pt; border-color: #6f00ff; background-color: aquamarine; color: rgb(41, 30, 32); position: relative; text-align: center; padding: 10px; margin: auto;">
+            Castelo News Noticias - Compromisso com a INFORMAÇÃO
+        </p>
+
+        <hr>
+
+        <div class="navbar">
+
+            <div class="subnav">
+
+                <button class="subnavbtn">Sobre <i class="fa fa-caret-down"></i></button>
+
+                <div class="subnav-content">
+
+                    <a href="#PREVISAO DO TEMPO">Previsão Tempo</a>
+
+                    <a href="#Segurança">Segurança</a>
+
+                    <a href="#Saúde">Saúde</a>
+
+                    <a href="#Esporte">Esporte</a>
+
+                    <a href="#Eleições">Eleições</a>
+
+                </div>
+
+            </div>
+
+            <div class="subnav">
+
+                <button class="subnavbtn">Serviços <i class="fa fa-caret-down"></i></button>
+
+                <div class="subnav-content">
+
+                    <a href="https://www.detran.sc.gov.br">DetranSC</a>
+
+                    <a href="https://loterias.caixa.gov.br/Paginas/default.aspx">Loterias</a>
+
+                </div>
+
+            </div>
+
+            <div class="subnav">
+
+                <button class="subnavbtn">Parceiros <i class="fa fa-caret-down"></i></button>
+
+                <div class="subnav-content">
+
+                    <a href="https://meu.inss.gov.br/" target="_blank">MeuINSS</a>
+
+                    <a href="https://ndmais.com.br" target="_blank">NDMAIS</a>
+
+                    <a href="https://scc10.com.br" target="_blank">SCC10</a>
+
+                </div>
+
+            </div>
+
+            <a href="#contato">Contato</a>
+
+        </div>
+
+        <h3> </h3>
+
+        <div style="padding:0 16px">
+
+        </div>
+
+        <h1>PREVISÕES DO TEMPO PARA REGIÃO DO PLANALTO NORTE</h1>
+
+        <button type="button" onclick="alert('Entre em contato pelo e-mail: castelonewsmc@gmail.com')">Click aqui!</button>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUkb8rpq1YCjwCRDs8Ux4nki8LTCVw_rEclNwboEFrPh7B6g/viewform?vc=0&c=0&w=1&flr=0"
+            target="_blank"><button>Cadastro</button></a>
+
+        <h2>PREVISÃO DO TEMPO PARA MONTE CASTELO</h2>
+
+        <picture>
+            <source media="(max-width: 670px)" srcset="">
+
+            <img src="IMAGENS/PREVISÃO TEMPO.png" alt="Previsão do Tempo">
+
+            <p>Terça-feira (21/05):
+                Tempo: predomínio de sol em SC, com mais nuvens e nevoeiros do Meio-Oeste ao norte do estado na
+                madrugada e manhã.
+                Temperatura: em elevação, máximas de 21 a 30°C.
+                Vento: nordeste, fraco a moderado, com rajadas no Litoral Sul.
+                Sistema: alta pressão no litoral Sul do Brasil.</p>
+
+
+            <h2>ACIDENTE EM BOMBINHAS</h2>
+            <picture>
+                <source media="(max-width: 670px)" srcset="">
+
+                <img src="IMAGENS/SEGURANÇA.jpg" alt="Segurança">
+            </picture>
+
+            <p>Um acidente de trânsito em Bombinhas, Litoral Norte de Santa Catarina, deixou um homem ferido na tarde do
+                último domingo (26). O motorista teria passado mal, perdendo o controle do veículo.O Corpo de Bombeiros
+                Militar foi acionado e encontrou o carro, um Volkswagen Polo, capotado e vazio. A vítima do acidente
+                estava na UPA Bairro Bombas e informou o que ocorreu.Homem que sofreu acidente em Bombinhas perdeu o
+                controle do veículo
+                O homem relatou que estava na Avenida Vereador João da Luz no Morro de Zimbros, indo no sentido Porto
+                Belo à Bombinhas, quando se sentiu
+                mal e perdeu o controle do carro durante uma curva. Fonte: ndmais</p>
+
+            <picture>
+                <source media="(max-width: 670px)" srcset="">
+
+                <img src="IMAGENS/NOTICIA ESPORTE.jpg" alt="Noticias do Esportes SC">
+            </picture>
+            <h2>CRICIUMA ANUNCIA SAIDA DE ATACANTE COLOMBIANO</h2>
+            <p>O Criciúma anunciou na tarde desta segunda-feira (27) a saída do atacante colombiano Yerson Candelo. O
+                jogador disputou 13 jogos pelo clube e não marcou gols.O jogador recebeu uma proposta de fora país e, em
+                comum acordo, rescindiu com o Tigre.O atleta acabou sendo pouco utilizado pelo técnico Cláudio Tencati e
+                acabou pedindo a liberação. A tendência é que a equipe catarinense receba uma compensação financeira.
+
+                Após a eliminação na Copa do Brasil, o Tigre volta a campo no próximo domingo (2), quando recebe o
+                Palmeiras no estádio
+                Heriberto Hülse. A bola rola a partir das 16h. Fonte:ndmais</p>
+
+            <picture>
+                <source media="(max-width: 670px)" srcset="">
+
+                <img src="IMAGENS/SAUDE.png" alt="Saude">
+                <h2>SECRETARIA ESTADUAL DE SAUDE REALIZA CAMPANHA DE VACINAÇÃO CONTRA POLIOMIELITE</h2>
+            </picture>
+
+            <P>Começa na próxima segunda, 27, em todo o estado de Santa Catarina, a Campanha de Vacinação contra a
+                poliomielite para crianças menores de 5 anos de idade. O dia D, sábado de mobilização estadual, está
+                previsto para o dia 8 de junho. O principal objetivo da Campanha é resgatar crianças não vacinadas ou
+                com a caderneta incompleta e, desta forma, elevar as coberturas vacinais a fim de evitar a reintrodução
+                do vírus que causa a paralisia infantil não só em Santa Catarina, mas em todo o país.
+
+                A gerente de doenças infecciosas agudas e imunização da Diretoria de Vigilância Epidemiológica (DIVE),
+                Arieli Schiessl Fialho, destaca que a última vez que Santa Catarina registrou casos de poliomielite foi
+                no ano de 1989, fato diretamente relacionado aos altos índices de vacinação. No entanto, desde o ano de
+                2018 SC não atinge a meta recomendada pelo Ministério da Saúde, de 95% de cobertura vacinal, o que abre
+                margem para a reintrodução do vírus no estado.
+
+                “Neste momento, não há registro de casos e da circulação do vírus no Brasil, mas há registros da doença
+                em outros países como o Paquistão e o Afeganistão e essa é a nossa preocupação. Se não temos uma
+                população vacinada, ficamos vulneráveis e suscetíveis à doença. Então, para evitar o retorno da
+                poliomielite é de extrema importância manter os índices de vacinação elevados”, enfatiza a gerente.
+
+                Em 2017, Santa Catarina alcançou a meta de 95% pela última vez. Depois disso, os índices de vacinação
+                ficaram abaixo do ideal; 94,59% (2018), 93,68% (2019), 88,70% (2020), 83,76% (2021), 87,31% (2022) e
+                90,36% (2023). Fonte: dive.sc
+            </P>
+
+            <h3>Quer saber alguns clubes do brasileirão 2024</h3>
+
+            <p>Abaixo segue alguns clubes que estão disputando o brasileirão 2024 e que tem possiblidades de levantar a
+                taça</p>
+
+            <div class="caixa">
+                <div class="fundo">
+                    <ol>
+
+                        <li> <abbr title="flamengo">flamengo</abbr></li>
+
+                        <li> <abbr title="santos">santos</abbr></li>
+
+                        <li> <abbr title="bahia">bahia</abbr></li>
+
+                        <li> <abbr title="grêmio">grêmio</abbr></li>
+
+                        <li> <abbr title="palmeiras">palmeiras</abbr></li>
+
+                        <li> <abbr title="vasco">vasco</abbr></li>
+
+                        <li> <abbr title="fortaleza ">fortaleza</abbr></li>
+
+                        <li> <abbr title="vitoria">vitoria</abbr></li>
+
+                        <li> <abbr title="Coritiba">coritiba</abbr></li>
+
+                        <li> <abbr title="cruzeiro">cruzeiro</abbr></li>
+
+                        <li> <abbr title="juventude">juventude</abbr></li>
+
+                        <li> <abbr title="internacional">internacional</abbr></li>
+
+                        <li> <abbr title="corinthians">corinthians</abbr></li>
+
+                        <li> <abbr title="fluminense">fluminense</abbr></li>
+
+                    </ol>
+
+                    <ul>
+                        <li> <abbr title="flamengo">flamengo</abbr></li>
+
+                        <li> <abbr title="santos">santos</abbr></li>
+
+                        <li> <abbr title="bahia">bahia</abbr></li>
+
+                        <li> <abbr title="grêmio">grêmio</abbr></li>
+
+                        <li> <abbr title="palmeiras">palmeiras</abbr></li>
+
+                        <li> <abbr title="vasco">vasco</abbr></li>
+
+                        <li> <abbr title="fortaleza ">fortaleza</abbr></li>
+
+                        <li> <abbr title="vitoria">vitoria</abbr></li>
+
+                        <li> <abbr title="Coritiba">coritiba</abbr></li>
+
+                        <li> <abbr title="cruzeiro">cruzeiro</abbr></li>
+
+                        <li> <abbr title="juventude">juventude</abbr></li>
+
+                        <li> <abbr title="internacional">internacional</abbr></li>
+
+                        <li> <abbr title="corinthians">corinthians</abbr></li>
+
+                        <li> <abbr title="fluminense">fluminense</abbr></li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VqNOCkCCWdw?si=KUMmijHnLeaYtt5l"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+            <footer>
+
+
+                Este Site foi Desenvolvido por <a href="#">ARI VIEIRA SIMÕES</a>
+
+            </footer>
+
+    </body>
+
+</html>
